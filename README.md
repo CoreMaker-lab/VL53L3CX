@@ -36,27 +36,30 @@ VL53L3CX
 
 
 # Project Introduction
-- **STM32H503CB_VL53L4CX_project1**:VL53L4CX小板开发(1)----驱动TOF进行测距
-- **CSDN Blog**:[https://blog.csdn.net/qq_24312945/article/details/144103902](https://blog.csdn.net/qq_24312945/article/details/144103902)
+- **STM32H503CBT6_VL53L3CX_Project1**:VL53L3CX小板开发(1)----驱动TOF进行测距
+- **CSDN Blog**:[https://blog.csdn.net/qq_24312945/article/details/150476955](https://blog.csdn.net/qq_24312945/article/details/150476955)
 
-VL53L4CX 是一款先进的激光距离传感器，专为长距离和多目标测量设计，能够在最长6米的范围内提供非常精确的距离测量，尤其在短距离上效果显著，这得益于新一代18°视场角的激光发射器和出色的环境光性能。
-得益于ST的专利算法和创新的模块结构，VL53L4CX还能在视场范围内检测到多个物体，并理解深度信息。ST的直方图算法确保了超过80厘米的距离覆盖玻璃的串扰免疫，并对80厘米以下的目标提供动态污渍补偿。
-
-
-The VL53L4CX is an advanced laser distance sensor designed for long-range and multi-target measurements, providing highly accurate distance measurements up to 6 meters. It excels particularly in short-range applications, thanks to the next-generation 18° field of view (FoV) laser emitter and exceptional ambient light performance.
-
-Leveraging ST's patented algorithms and innovative module architecture, the VL53L4CX is capable of detecting multiple objects within its field of view and understanding depth information. ST's histogram algorithm ensures cross-talk immunity for targets over 80 cm, even when covered by glass, and provides dynamic stain compensation for objects below 80 cm.
+VL53L3CX是意法半导体的最新飞行时间（ToF）产品，并嵌入了意法半导体的第三代FlightSense专利技术。它结合了高性能的接近和测距传感器，具有多目标距离测量和自动污迹校正功能。微型可回流封装集成了单光子雪崩二极管（SPAD）阵列和物理红外滤光片，在各种环境照明条件下实现最佳测距性能，并配有各种覆盖玻璃窗。
+VL53L3CX结合了高性能接近传感器的优点、出色的短距离线性度以及高达3 m的测距能力。
+凭借获得专利的算法和巧妙的模块构造，VL53L3CX还能够通过深度了解来检测视野（FoV）内的不同对象。意法半导体的直方图算法允许覆盖玻璃的串扰抗扰度超过80 cm，并具有动态污迹补偿功能。
 
 
-- **STM32H503CB_VL53L4CD_project2**:VL53L4CX小板开发(2)----修改测距范围及测量频率
-- **CSDN Blog**:[https://blog.csdn.net/qq_24312945/article/details/144104559](https://blog.csdn.net/qq_24312945/article/details/144104559)
+The VL53L3CX is STMicroelectronics’ latest Time-of-Flight (ToF) product, embedded with ST’s third-generation patented FlightSense technology. It combines a high-performance proximity and ranging sensor with multi-target distance measurement and automatic smudge correction capabilities. Its miniature reflowable package integrates a Single Photon Avalanche Diode (SPAD) array and a physical infrared filter, enabling optimal ranging performance under various ambient lighting conditions and with a wide range of cover glass windows.
 
-VL53L4CX传感器是一款高性能的飞行时间（Time-of-Flight）传感器，广泛应用于各种距离测量和目标检测场景。其灵活的配置选项使得用户可以根据具体应用需求调整测距范围和测量频率，从而实现最佳性能。本篇文章将介绍如何通过修改VL53L4CX传感器的测距范围和测量频率来满足不同应用场景的需求。
+The VL53L3CX combines the advantages of a high-performance proximity sensor, excellent short-distance linearity, and a ranging capability of up to 3 meters.
+
+With its patented algorithms and clever module architecture, the VL53L3CX can also detect different objects within the field of view (FoV) through depth understanding. STMicroelectronics’ histogram algorithm enables cover-glass crosstalk immunity beyond 80 cm and provides dynamic smudge compensation.
 
 
+- **STM32H503CBT6_VL53L3CX_Project2**:VL53L3CX小板开发(2)----修改测距范围及测量频率
+- **CSDN Blog**:[https://blog.csdn.net/qq_24312945/article/details/150477031](https://blog.csdn.net/qq_24312945/article/details/150477031)
 
-The VL53L4CX sensor is a high-performance Time-of-Flight (ToF) sensor, widely used in various distance measurement and object detection applications. Its flexible configuration options allow users to adjust the ranging distance and measurement frequency according to specific application needs, achieving optimal performance. This article will introduce how to modify the ranging distance and measurement frequency of the VL53L4CX sensor to meet the requirements of different application scenarios.
+VL53L3CX是一款高度集成的飞行时间（ToF）传感器，广泛应用于距离测量和接近检测。为了满足不同应用场景的需求，合理调整传感器的测量频率至关重要。本文旨在介绍如何在VL53L3CX传感器上修改测量频率，以优化其性能和功耗。
+测量频率指传感器每秒进行测量的次数，通常以赫兹（Hz）为单位。对于VL53L3CX传感器，测量频率的调整能够影响到传感器的响应速度、精度 以及功耗表现。
 
+The VL53L3CX is a highly integrated Time-of-Flight (ToF) sensor widely used for distance measurement and proximity detection. To meet the requirements of different application scenarios, it is essential to properly adjust the sensor’s measurement frequency. This article aims to introduce how to modify the measurement frequency of the VL53L3CX sensor in order to optimize its performance and power consumption.
+
+Measurement frequency refers to the number of measurements performed by the sensor per second, usually expressed in hertz (Hz). For the VL53L3CX sensor, adjusting the measurement frequency can affect the sensor’s response speed, accuracy, and power consumption.
 
 
 
